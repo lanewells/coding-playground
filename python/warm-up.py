@@ -17,3 +17,18 @@ import datetime
 # => Lane, in the year 2097 you will be 100 years old.
 
 
+# Exercise 2: Odd or even
+
+# Ask the user for a number. Depending on whether the number is even or odd, 
+# print out an appropriate message to the user. Hint: how does an even / odd 
+# number react differently when divided by 2?
+
+# Solution:
+
+num = input("Give me a number: ")
+remainder = int(num) % 2
+if remainder == 1:
+    result = 'odd'
+elif remainder == 0:
+    result = 'even'
+print('Your number (' + str(num) + ') is an ' + result + ' number.')
