@@ -86,8 +86,8 @@ import datetime
 
 # Take two lists, say for example these two:
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 # and write a program that returns a list that contains only the elements that are 
 # common between the lists (without duplicates). Make sure your program works on two lists of different sizes.
 
@@ -108,3 +108,13 @@ b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 # print(new_list)
 
 # print(list(set(a) & set(b)))
+
+
+
+# Exercise 7 (and Solution)
+# Let’s say I give you a list saved in a variable:
+a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
+new_list = [x for x in a if x % 2 == 0]
+print(new_list)
