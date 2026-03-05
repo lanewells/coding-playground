@@ -91,6 +91,8 @@ import datetime
 # and write a program that returns a list that contains only the elements that are 
 # common between the lists (without duplicates). Make sure your program works on two lists of different sizes.
 
+# Solution:
+
 # new_list = []
 # for x in a:
 #     if x in b and x not in new_list:
@@ -111,10 +113,27 @@ import datetime
 
 
 
+# Exercise 6 (and Solution)
+# Ask the user for a string and print out whether this string is a palindrome or not. 
+# (A palindrome is a string that reads the same forwards and backwards.)
+
+# Solution:
+
+s = input("Type a string of characters: ")
+for i in range(len(s) // 2):
+    if s[i] != s[-i-1]:
+        print("not palindrome")
+        break
+else: print("palindrome!")
+
+
+
 # Exercise 7 (and Solution)
 # Let’s say I give you a list saved in a variable:
 a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 # Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
 
-new_list = [x for x in a if x % 2 == 0]
-print(new_list)
+# Solution:
+
+# new_list = [x for x in a if x % 2 == 0]
+# print(new_list)
